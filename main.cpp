@@ -9,6 +9,7 @@ int main() {
 
   // declare arrays
   int A[N];
+  int G[N];
 
   // for loop to cycle through array
   for (int i = 0; i < N; i ++){
@@ -21,20 +22,21 @@ int main() {
 
   for (int k = 0; k < N; k++){
     if(A[k] > larger){
-      
+      larger = A[k];
+      G[count] = larger;
     }
+    count++;
   }
 
-  
+    // output the number of indexes and the array of values left
+  cout << count << endl;
+     for (int j = 0; j < count; j++){
+       if(j != count-1){  // (gi - 1)
+         cout << G[j];
+       }
+       else {
+         cout << G[j];
+       }
+     }
 
-  
-
-  // output the number of indexes and the array of values left
-
-  
-
-
-
-
-  
 }
